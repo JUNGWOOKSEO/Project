@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Controller
 public class CustomerController implements WebMvcConfigurer{
-	 
+	// 바이바이 
 //	 @GetMapping("/index")
 //	    public String main(){
 //	        return "index";
