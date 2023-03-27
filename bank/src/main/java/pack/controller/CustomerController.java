@@ -12,7 +12,7 @@ public class CustomerController implements WebMvcConfigurer{
 //	    public String main(){
 //	        return "index";
 //	    }
-	//
+	//하이하이
 	@GetMapping("/login")
 	public String loginpage(Model model) {
 		return "html.login/login";
