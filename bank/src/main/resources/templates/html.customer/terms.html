@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+	 layout:decorate="~{layouts/layout1}">
+<body>
+<div layout:fragment="content">
+<h1><a href="main">고객페이지 메인</a></h1>
+<a href="index.html">홈</a>
+
+<!-- 약관 메인 페이지의 사이드 바 -->
+<!-- 약관 메인 페이지를 들어가면 첫번쨰의 사이드 메뉴인 전자 금융 페이지가 보이도록 -->
+<div id="termsMain">
+	<div class="contentWrap">
+		<div id="terms">
+			<div class="termsWrap">
+				<h2 class="termsTitle">서식/약관/설명서</h2>
+				<ul id="terms" class="terms">
+					<li class="on"><a class="single" href="">전자금융</a></li>
+					<li><a href="">퇴직연금</a></li>
+					<li><a href="">대출</a></li>
+					<li><a href="">외환</a></li>
+					<li><a href="">예금/채권</a></li>
+					<li><a href="">국내/해외투자펀드</a></li>
+					<li><a href="">역외펀드</a></li>
+					<li><a href="">신탁</a></li>
+					<li><a href="">B2B전자결제</a></li>
+					<li><a href="">장외 파생상품</a></li>
+					<li><a href="">KB카드</a></li>
+					<li><a href="">기타</a></li>
+				</ul>
+			</div>
+		
+			<div id="checkCenter">
+				<p>
+					<a href="">인증센터</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="certipath">
+		<div id="certiWrap">
+			<!-- Navigation 시작 (어느 경로를 통해 약관 홈페이지까지 왔는지 표시) -->
+			<h4 class="blind">페이지 위치</h4>
+			<div class="linemap">
+				<a href="">고객센터</a> 
+				<a href="">서식/약관/설명서</a>
+				<em>전자금융</em>
+			</div>
+		</div>
+	</div>
+
+	<div id="certiTitle">
+		<!-- Title  -->
+		<div class="toparea">
+				<h1 class="">전자금융</h1>
+		</div>
+	</div>
+
+	<div id="certiCont">
+		<form name="mainForm" method="post" action="">
+			<div class="paperBox">
+				<div class="allarea">
+					<div class="imgarea">
+						<img src="" alt="전자 금융 관련 이미지 추가" />
+					</div>
+					<div class="listarea">
+						<ul>
+							<li>
+								<span class="num">1</span>약관
+								 <span class="btnsmall">
+									<button type="button" onclick="">전체보기</button>
+								</span>
+							</li>
+							<li>
+								<span class="num">2</span>서비스설명서 
+								<span class="btn small">
+									<button type="button" onclick="\">전체보기</button>
+								</span>
+							</li>
+							<li class="bdnone">
+								<span class="num">3</span>신청서 
+								<span class="btn small">
+									<button type="button" onclick="">전체보기</button>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="readmethod">
+			<ul class="downarea">
+				<li>
+					<img src="" alt="Adobe 이미지" />
+					<h2 class="pdf">PDF 문서를 열람하는 방법</h2>
+					<p>
+						<a href="http://www.korea.adobe.com/products/acrobat/readstep2.html" target="_blank" title="새창으로 열림">Acrobat Reader를 다운로드</a>하셔서
+							설치하세요.
+					</p>
+				</li>
+				<li>
+					<img src="" alt="알집" />
+					<h2 class="zip">ZIP 문서를 열람하는 방법</h2>
+					<p>
+						<a href="http://www.altools.co.kr" target="_blank" title="새창으로 열림">ESTsoft Alzip을 다운로드</a>하셔서 설치하세요.
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>	
+</div>
+</div>
+</body>
+</html>

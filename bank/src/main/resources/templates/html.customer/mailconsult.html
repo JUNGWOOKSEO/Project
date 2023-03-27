@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<body>
+	<div layout:fragment="content">
+		<h1>
+			<a href="main">고객페이지 메인</a>
+		</h1>
+		<a href="index.html">홈</a>
+		<div class="emil_title">
+			<h2>이메일 상담</h2>
+		</div>
+
+		<div class="emailForm">
+			<form name="WriteForm" method="post" action="">
+
+				<div class="frm-email">
+					<label for="privacy_agree" class="col-xs-3">개인정보 수집 및 이용동의</label>
+					<div>개인정보 수집 및 이용동의 설명</div>
+					<div class="col-xs-9">
+						<input type="checkbox" name="privacy_agree" id="privacy_agree"
+							value="Y"> <label for="privacy_agree">개인정보 수집 및
+							이용동의에 동의합니다.</label>
+					</div>
+				</div>
+
+				<div class="frm-email">
+					<label for="subject" class="mailConsult">제목</label>
+					<div class="mainInfo">
+						<input type="text" name="title" id="title" class="form-control">
+					</div>
+				</div>
+
+				<div class="frm-email">
+					<label for="content" class="mailConsult">내용</label>
+					<div class="mainInfo">
+						<textarea name="content" id="content" class="form-control"
+							rows="8"></textarea>
+					</div>
+				</div>
+				<div class="frm-email">
+					<label for="name" class="mailConsult">성명</label>
+					<div class="mainInfo">
+						<input type="text" name="name" id="name" class="form-control">
+					</div>
+				</div>
+				<div class="frm-email">
+					<label for="tel" class="mailConsult">전화번호</label>
+					<div class="mainInfo">
+						<input type="text" name="tel" id="tel" class="form-control">
+					</div>
+				</div>
+				<div class="frm-email">
+					<label for="email" class="mailConsult">이메일</label>
+					<div class="mainInfo">
+						<!--  
+      		<input type="text" name="email" id="email" class="form-control">
+      		-->
+						<input type="text" id="email_id" class="form_w200" value=""
+							title="이메일 아이디" placeholder="이메일" maxlength="18" /> @ <input
+							type="text" id="email_domain" class="form_w200" value=""
+							title="이메일 도메인" placeholder="이메일 도메인" maxlength="18" /> <select
+							class="select" title="이메일 도메인 주소 선택" onclick="">
+							<option value="">-선택-</option>
+							<option value="naver.com">naver.com</option>
+							<option value="gmail.com">gmail.com</option>
+							<option value="hanmail.net">hanmail.net</option>
+							<option value="hotmail.com">hotmail.com</option>
+							<option value="korea.com">korea.com</option>
+							<option value="nate.com">nate.com</option>
+							<option value="yahoo.com">yahoo.com</option>
+						</select>
+					</div>
+				</div>
+				<div class="frm-group">
+					<label for="antispam" class="mailConsult">자동입력방지문자</label>
+					<div class="mainInfo">
+						<input type="text" name="antispam" id="antispam"
+							class="form-control"> <img
+							src="/customer/01/antispam_img.jsp" alt="자동입력방지문자 이미지">
+					</div>
+				</div>
+
+				<div class="frm-group">
+					<div class="mailInfoSubmit">
+						<button type="button" class="btn btn-primary">보내기</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

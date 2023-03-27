@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout"
+	 layout:decorate="~{layouts/layout1}">
+<body>
+<div layout:fragment="content">
+<textarea rows="4" cols="40%" ></textarea>
+<textarea rows="4" cols="40%"></textarea><br/>
+<input type="button" value="쿠폰함"><br/>
+<input type="button" value="예금/신탁">
+<input type="button" value="대출">
+<input type="button" value="펀드">
+<input type="button" value="퇴직연금">
+<input type="button" value="휴먼예금">
+<input type="button" value="다른기관계좌">
+<br/>
+<br/>
+<table >
+	<tr>
+		<th>계좌명</th><th>계좌번호</th><th>개설일자</th><th>만기일</th><th>잔액(원)</th><th>업무</th>
+	</tr>
+	<tr>
+		<th>신한주거래우대통장(저축예금)</th><th>110-322-587490</th><th>2011.02.14</th><th>2023.03.21</th><th>111112542</th>
+		<th>
+			<input type="button" value="조회">
+			<input type="button" value="이체">
+		</th>
+	</tr>
+	<tr>
+		<th>나에게 맞는 상품 추천</th>
+	</tr>
+</table>
+	<br/>
+
+		<input type="button" value="상품현황">
+		<input type="button" value="금융현황">
+		<input type="button" value="우대혜택">
+		<input type="button" value="이체한도">
+<br/>
+</div>
+</body>
+</html>
