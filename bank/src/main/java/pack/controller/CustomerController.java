@@ -12,6 +12,7 @@ public class CustomerController implements WebMvcConfigurer{
 //	    public String main(){
 //	        return "index";
 //	    }
+	//
 	@GetMapping("/login")
 	public String loginpage(Model model) {
 		return "html.login/login";
